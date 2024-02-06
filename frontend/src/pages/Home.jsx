@@ -8,6 +8,7 @@ import icon02 from '../assets/images/icon02.png';
 import icon03 from '../assets/images/icon03.png';
 import {Link} from 'react-router-dom';
 import {BsArrowRight} from 'react-icons/bs';
+import About from "../components/About/About";
 
 const Home = () => {
     return (
@@ -86,7 +87,8 @@ const Home = () => {
             </div>
         </div>
     </section>
-        {/* ======= hero section end ======= */}
+        
+    {/* ======= hero section end ======= */}
 
     <section>
         <div className="container">
@@ -137,7 +139,7 @@ const Home = () => {
 
                 <div className="mt-[30px]">
                     <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">
-                        Find a Doctor
+                        Find a Location
                     </h2>
 
                     <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
@@ -164,7 +166,7 @@ const Home = () => {
 
                 <div className="mt-[30px]">
                     <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">
-                        Find a Location
+                        Book Appointment
                     </h2>
 
                     <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
@@ -186,7 +188,8 @@ const Home = () => {
         </div>
         </div>
     </section>
-
+    
+    <About />
     </>
     );   
 };
