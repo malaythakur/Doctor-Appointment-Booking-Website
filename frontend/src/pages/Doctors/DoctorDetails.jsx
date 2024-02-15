@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import doctorImg from "../../assets/images/doctor-img02.png";
 import starIcon from "../../assets/images/Star.png"
+import DoctorAbout from "./DoctorAbout";
+import Feedback from "./Feedback";
 
 const DoctorDetails = () => {
 
@@ -40,7 +42,6 @@ const DoctorDetails = () => {
                             </div>
                         </div>
 
-
                         <div className="mt-[50px] border-b border-solid border-[#0066ff34]">
                             
                             <button
@@ -60,11 +61,14 @@ const DoctorDetails = () => {
                             </button>
                         </div>
 
+                        <div className="mt-[50px]">
+                            {tab==='about' && <DoctorAbout /> }
+                            {tab==='feedback' && <Feedback/> }
+                            
+                        </div>
                     </div>
 
-                    <div>
-
-                    </div>
+                    <div></div>
                 </div>
             </div>
         </section>
